@@ -227,6 +227,7 @@ nav .container .links button span:not(:last-child){
 @media (max-width:600px) {
         nav{
         padding: 40px 0;
+        height: 134px;
     }
 }
 /* end nav */
@@ -355,9 +356,6 @@ section.landing .container .animation .outer .inner{
     section.landing .container .text h1{
         font-size: 12vw;
     }
-    section.landing{
-        height: 50vh;
-    }
 }
 @media (max-width:480px) {
     section.landing .container .text p:last-child{
@@ -377,11 +375,15 @@ section.bio .container{
 section.bio .container :where(.left, .info){
     width: 50%;
 }
+section.bio .container .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 section.bio .container .left .img{
     position: relative;
     width: fit-content;
-    height: 440px;
-    background-color: red;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -404,6 +406,7 @@ section.bio .container .left .img .frame{
     -o-border-radius: 10px;
 }
 section.bio .container .left .img img{
+    width: 100%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -565,6 +568,11 @@ section.bio .container .info .btns button:hover{
     }
     section.bio .container .left{
         margin-bottom: 10px;
+    }
+}
+@media (max-width:400px) {
+    section.bio .container .left .img{
+        width: 90%;
     }
 }
 /* end bio */
@@ -746,6 +754,7 @@ section.portfolio .container .item:hover .upper a{
         width: 100%;
     }
 }
+/*start  blog */
 section.blogs{
     padding: 50px 0;
 }
@@ -821,10 +830,7 @@ section.blogs .container .blogs .blog:hover .text a:hover i{
     }
 }
 @media (max-width:620px) {
-    section.blogs .container{
-        padding-left: 120px;
-        padding-right:120px ;
-    }
+
     section.blogs .container .blogs .blog{
         width: 100%;
         margin-bottom: 20px;
