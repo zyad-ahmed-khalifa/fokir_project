@@ -224,11 +224,16 @@ nav .container .links button span:not(:last-child){
         padding: 20px;
     }
 }
+@media (max-width:600px) {
+        nav{
+        padding: 40px 0;
+    }
+}
 /* end nav */
 /* start landing */
 section.landing{
     height: calc(100vh);
-    background: url("../img/slider-01-cd8154e4.jpg") ;
+    background: url("../img/slider-01-cd8154e4.jpg") center center;
 }
 section.landing .container{
     height: 100%;
@@ -349,6 +354,9 @@ section.landing .container .animation .outer .inner{
 @media (max-width:600px) {
     section.landing .container .text h1{
         font-size: 12vw;
+    }
+    section.landing{
+        height: 50vh;
     }
 }
 @media (max-width:480px) {
