@@ -226,8 +226,8 @@ nav .container .links button span:not(:last-child){
 }
 @media (max-width:600px) {
         nav{
-        padding: 40px 0;
-        height: 134px;
+            padding: 20px 0;
+            height: 94px;
     }
 }
 /* end nav */
